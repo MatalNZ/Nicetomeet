@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז מת"ל - נס ציונה</title>
+    <style>
+        :root {
+            --purple: #421e5c;
+            --red: #cc2036;
+            --bg: #fdfafb;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            margin: 0; padding: 0;
+            display: flex; justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: flex; flex-direction: column;
+        }
+        .header {
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--purple);
+        }
+        .logo-box {
+            margin-bottom: 15px;
+        }
+        /* הלוגו מוטמע כאן כקישור ישיר לתמונה שהעלית */
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+        }
+        h1 { color: var(--purple); margin: 10px 0; font-size: 1.7rem; }
+        .sub { color: var(--red); font-weight: bold; font-size: 1.1rem; }
+        
+        .card {
+            margin: 15px; padding: 20px;
+            border-radius: 12px;
+            background: #fcfcfc;
+            border-right: 6px solid var(--purple);
+            text-align: right;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .card h2 { color: var(--purple); margin-top: 0; font-size: 1.3rem; }
+        ul { padding-right: 20px; margin: 10px 0; }
+        li { margin-bottom: 8px; }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn-p { background: var(--purple); color: white; }
+        .btn-r { background: var(--red); color: white; }
+        .btn:active { transform: scale(0.98); }
+
+        .footer {
+            margin-top: auto;
+            background: var(--purple);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="logo-box">
+            <img src="https://i.ibb.co/VpXmXvL/matal-logo.png" alt="לוגו מתל" class="logo-img">
+        </div>
+        <h1>נעים להכיר, מרכז מת"ל</h1>
+        <div class="sub">אגף החינוך | עיריית נס ציונה</div>
+    </div>
+
+    <div class="card">
+        <h2>מערך הטיפולים הרגשיים</h2>
+        <ul>
+            <li>טיפולים רגשיים ופסיכותרפיה</li>
+            <li>קבוצות מיומנויות חברתיות ("קשר חברתי")</li>
+            <li>ריפוי בעיסוק וריפוי בדיבור</li>
+            <li>פסיכותרפיה CBT למבוגרים ונוער</li>
+        </ul>
+        <a href="https://www.nzc.org.il/%D7%98%D7%95%D7%A4%D7%A1-%D7%A4%D7%A0%D7%99%D7%99%D7%94-%D7%9C%D7%9E%D7%AA%D7%9C/" target="_blank" class="btn btn-p">להגשת בקשה לטיפול באתר העירייה</a>
+    </div>
+
+    <div class="card" style="border-right-color: var(--red);">
+        <h2>סדנאות ושירותים נוספים</h2>
+        <ul>
+            <li>הדרכות הורים פרטניות</li>
+            <li>ייעוץ זוגי ומשפחתי</li>
+            <li>חוגי מוכנות לכיתה א'</li>
+            <li>סדנאות והרצאות להורים</li>
+        </ul>
+        <a href="mailto:matal@nzc.org.il?subject=פנייה מדף הנחיתה&body=שלום, אשמח לפרטים על:" class="btn btn-r">שלחו לנו מייל לפרטים וסדנאות</a>
+    </div>
+
+    <div class="footer">
+        📍 אבנר בן יהודה 4, נס ציונה<br>
+        📞 08-8638024 | ✉️ matal@nzc.org.il
+    </div>
+</div>
+
+</body>
+</html>
