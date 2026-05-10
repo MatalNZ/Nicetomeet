@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>מרכז מת"ל - נס ציונה</title>
     <style>
         :root {
@@ -11,7 +11,7 @@
             --bg: #fdfafb;
         }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg);
             margin: 0; padding: 0;
             display: flex; justify-content: center;
@@ -21,24 +21,21 @@
             max-width: 480px;
             background: white;
             min-height: 100vh;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
             display: flex; flex-direction: column;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         .header {
-            padding: 30px 20px;
+            padding: 25px 20px;
             text-align: center;
             border-bottom: 5px solid var(--purple);
         }
-        .logo-box {
-            margin-bottom: 15px;
-        }
-        /* הלוגו מוטמע כאן כקישור ישיר לתמונה שהעלית */
         .logo-img {
-            max-width: 250px;
+            max-width: 220px;
             height: auto;
+            margin-bottom: 10px;
         }
-        h1 { color: var(--purple); margin: 10px 0; font-size: 1.7rem; }
-        .sub { color: var(--red); font-weight: bold; font-size: 1.1rem; }
+        h1 { color: var(--purple); margin: 10px 0 5px; font-size: 1.6rem; }
+        .sub { color: var(--red); font-weight: bold; margin-bottom: 10px; }
         
         .card {
             margin: 15px; padding: 20px;
@@ -46,11 +43,10 @@
             background: #fcfcfc;
             border-right: 6px solid var(--purple);
             text-align: right;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        .card h2 { color: var(--purple); margin-top: 0; font-size: 1.3rem; }
+        .card h2 { color: var(--purple); margin-top: 0; font-size: 1.25rem; border-bottom: 1px solid #eee; padding-bottom: 8px; }
         ul { padding-right: 20px; margin: 10px 0; }
-        li { margin-bottom: 8px; }
+        li { margin-bottom: 8px; font-size: 1rem; }
 
         .btn {
             display: block;
@@ -60,11 +56,10 @@
             text-align: center;
             font-weight: bold;
             margin-top: 15px;
-            transition: 0.3s;
+            font-size: 1.1rem;
         }
         .btn-p { background: var(--purple); color: white; }
         .btn-r { background: var(--red); color: white; }
-        .btn:active { transform: scale(0.98); }
 
         .footer {
             margin-top: auto;
@@ -80,9 +75,7 @@
 
 <div class="container">
     <div class="header">
-        <div class="logo-box">
-            <img src="https://i.ibb.co/VpXmXvL/matal-logo.png" alt="לוגו מתל" class="logo-img">
-        </div>
+        <img src="https://www.nzc.org.il/wp-content/uploads/2023/04/logo-matal.png" alt="לוגו מתל" class="logo-img" onerror="this.src='https://i.ibb.co/VpXmXvL/matal-logo.png'">
         <h1>נעים להכיר, מרכז מת"ל</h1>
         <div class="sub">אגף החינוך | עיריית נס ציונה</div>
     </div>
@@ -91,9 +84,9 @@
         <h2>מערך הטיפולים הרגשיים</h2>
         <ul>
             <li>טיפולים רגשיים ופסיכותרפיה</li>
-            <li>קבוצות מיומנויות חברתיות ("קשר חברתי")</li>
+            <li>קבוצות מיומנויות חברתיות</li>
             <li>ריפוי בעיסוק וריפוי בדיבור</li>
-            <li>פסיכותרפיה CBT למבוגרים ונוער</li>
+            <li>פסיכותרפיה CBT</li>
         </ul>
         <a href="https://www.nzc.org.il/%D7%98%D7%95%D7%A4%D7%A1-%D7%A4%D7%A0%D7%99%D7%99%D7%94-%D7%9C%D7%9E%D7%AA%D7%9C/" target="_blank" class="btn btn-p">להגשת בקשה לטיפול באתר העירייה</a>
     </div>
@@ -106,7 +99,7 @@
             <li>חוגי מוכנות לכיתה א'</li>
             <li>סדנאות והרצאות להורים</li>
         </ul>
-        <a href="mailto:matal@nzc.org.il?subject=פנייה מדף הנחיתה&body=שלום, אשמח לפרטים על:" class="btn btn-r">שלחו לנו מייל לפרטים וסדנאות</a>
+        <a href="mailto:matal@nzc.org.il?subject=פנייה מדף הנחיתה&body=שלום, אשמח לפרטים על:" class="btn btn-r">שלחו לנו מייל לפרטים נוספים</a>
     </div>
 
     <div class="footer">
