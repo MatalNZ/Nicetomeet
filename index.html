@@ -25,49 +25,65 @@
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         .header {
-            padding: 25px 20px;
+            padding: 40px 20px;
             text-align: center;
             border-bottom: 5px solid var(--purple);
+            background: linear-gradient(to bottom, #fff, #f9f4f9);
         }
-        .logo-img {
-            max-width: 220px;
-            height: auto;
-            margin-bottom: 10px;
+        /* עיצוב טקסט חלופי במקום לוגו */
+        .brand-name {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--purple);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -2px;
         }
-        h1 { color: var(--purple); margin: 10px 0 5px; font-size: 1.6rem; }
-        .sub { color: var(--red); font-weight: bold; margin-bottom: 10px; }
+        .brand-sub {
+            color: var(--red);
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        h1 { color: var(--purple); margin: 25px 0 5px; font-size: 1.8rem; }
+        .city-tag { color: #666; font-size: 1rem; margin-bottom: 20px; }
         
         .card {
             margin: 15px; padding: 20px;
             border-radius: 12px;
-            background: #fcfcfc;
+            background: #fff;
             border-right: 6px solid var(--purple);
             text-align: right;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
         }
-        .card h2 { color: var(--purple); margin-top: 0; font-size: 1.25rem; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        ul { padding-right: 20px; margin: 10px 0; }
-        li { margin-bottom: 8px; font-size: 1rem; }
+        .card h2 { color: var(--purple); margin-top: 0; font-size: 1.3rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        ul { padding-right: 20px; margin: 15px 0; }
+        li { margin-bottom: 10px; font-size: 1.05rem; color: #444; }
 
         .btn {
             display: block;
             text-decoration: none;
-            padding: 15px;
-            border-radius: 8px;
+            padding: 16px;
+            border-radius: 10px;
             text-align: center;
             font-weight: bold;
             margin-top: 15px;
             font-size: 1.1rem;
+            transition: 0.2s;
         }
         .btn-p { background: var(--purple); color: white; }
         .btn-r { background: var(--red); color: white; }
+        .btn:active { transform: scale(0.97); }
 
         .footer {
             margin-top: auto;
             background: var(--purple);
             color: white;
-            padding: 20px;
+            padding: 25px 20px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -75,35 +91,36 @@
 
 <div class="container">
     <div class="header">
-        <img src="https://www.nzc.org.il/wp-content/uploads/2023/04/logo-matal.png" alt="לוגו מתל" class="logo-img" onerror="this.src='https://i.ibb.co/VpXmXvL/matal-logo.png'">
-        <h1>נעים להכיר, מרכז מת"ל</h1>
-        <div class="sub">אגף החינוך | עיריית נס ציונה</div>
+        <div class="brand-name">מת"ל</div>
+        <div class="brand-sub">מרכז התפתחותי לילד ולמשפחה</div>
+        <h1>נעים להכיר!</h1>
+        <div class="city-tag">אגף החינוך | עיריית נס ציונה</div>
     </div>
 
     <div class="card">
-        <h2>מערך הטיפולים הרגשיים</h2>
+        <h2>מערך הטיפולים</h2>
         <ul>
             <li>טיפולים רגשיים ופסיכותרפיה</li>
-            <li>קבוצות מיומנויות חברתיות</li>
+            <li>קבוצות "קשר חברתי" למיומנויות</li>
             <li>ריפוי בעיסוק וריפוי בדיבור</li>
-            <li>פסיכותרפיה CBT</li>
+            <li>פסיכותרפיה קוגניטיבית התנהגותית (CBT)</li>
         </ul>
         <a href="https://www.nzc.org.il/%D7%98%D7%95%D7%A4%D7%A1-%D7%A4%D7%A0%D7%99%D7%99%D7%94-%D7%9C%D7%9E%D7%AA%D7%9C/" target="_blank" class="btn btn-p">להגשת בקשה לטיפול באתר העירייה</a>
     </div>
 
     <div class="card" style="border-right-color: var(--red);">
-        <h2>סדנאות ושירותים נוספים</h2>
+        <h2>הדרכה וייעוץ</h2>
         <ul>
-            <li>הדרכות הורים פרטניות</li>
+            <li>הדרכת הורים פרטנית</li>
             <li>ייעוץ זוגי ומשפחתי</li>
             <li>חוגי מוכנות לכיתה א'</li>
             <li>סדנאות והרצאות להורים</li>
         </ul>
-        <a href="mailto:matal@nzc.org.il?subject=פנייה מדף הנחיתה&body=שלום, אשמח לפרטים על:" class="btn btn-r">שלחו לנו מייל לפרטים נוספים</a>
+        <a href="mailto:matal@nzc.org.il?subject=פנייה מדף הנחיתה" class="btn btn-r">שלחו לנו מייל לפרטים נוספים</a>
     </div>
 
     <div class="footer">
-        📍 אבנר בן יהודה 4, נס ציונה<br>
+        📍 רחוב אבנר בן יהודה 4, נס ציונה<br>
         📞 08-8638024 | ✉️ matal@nzc.org.il
     </div>
 </div>
